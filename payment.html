@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>University Payment Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Bluecrest University</h1>
+        <p>Online School Fees Payment</p>
+    </div>
+
+    <div class="payment-box">
+        <h2 id="studentName"></h2>
+        <h3>Amount to Pay: ₦50,000</h3>
+
+        <button onclick="completePayment()">Pay Now</button>
+    </div>
+
+</div>
+
+<script>
+
+    // Display student name from localStorage
+    document.getElementById("studentName").innerText =
+        "Student: " + localStorage.getItem("studentName");
+
+    function completePayment() {
+        alert("Payment Successful 🎉");
+
+        // Clear storage after payment
+        localStorage.clear();
+
+        window.location.href = "index.html";
+    }
+
+</script>
+
+</body>
+</html>
