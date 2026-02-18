@@ -1,32 +1,69 @@
+/* Page Background */
 body {
-    font-family: Arial;
-    background-color: #f4f4f4;
-    text-align: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f7;
 }
 
+/* Main Container Block */
 .container {
-    width: 400px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    margin-top: 50px;
-    border-radius: 10px;
+    width: 500px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #003366;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Form Inputs Block */
+form {
+    display: block;
 }
 
 input, select {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
+/* Button Block */
 button {
-    padding: 10px 20px;
-    background-color: green;
+    width: 100%;
+    padding: 12px;
+    background-color: #003366;
     color: white;
     border: none;
+    border-radius: 5px;
+    font-size: 15px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: darkgreen;
+    background-color: #0055aa;
+}
+
+/* Section Blocks */
+#paymentSection,
+#successMessage {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fc;
+    border-radius: 6px;
+    border-left: 4px solid #003366;
 }
