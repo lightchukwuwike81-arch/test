@@ -33,4 +33,12 @@ button {
     padding: 12px;
     background-color: green;
     color: white;
-    border: non
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
