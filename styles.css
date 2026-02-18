@@ -1,21 +1,19 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+.form-group {
+    display: block;
+    margin-bottom: 45px;   /* BIG SPACE between each form block */
 }
 
-.container {
-    width: 450px;
-    margin: 80px auto;   /* More space top and bottom */
-    background: white;
-    padding: 40px;       /* Increased inner spacing */
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+label {
+    display: block;
+    margin-bottom: 12px;   /* Space between label and input */
+    font-size: 16px;
+    font-weight: bold;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 30px; /* Space below title */
+input, select {
+    width: 100%;
+    padding: 15px;         /* Bigger input size */
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
-
-h2 {
-    margin-b
