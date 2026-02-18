@@ -1,0 +1,8 @@
+student-portal/
+│
+├── index.html
+├── register.html
+├── payment.html
+├── success.html
+├── style.css
+└── script.js
