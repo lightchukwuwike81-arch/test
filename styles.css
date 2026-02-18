@@ -1,19 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 600px;
+    margin: 100px auto;
+    background: white;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;       /* Very large title */
+    margin-bottom: 50px;   /* Large spacing */
+}
+
 .form-group {
-    display: block;
-    margin-bottom: 45px;   /* BIG SPACE between each form block */
+    margin-bottom: 50px;   /* VERY large space between fields */
 }
 
 label {
     display: block;
-    margin-bottom: 12px;   /* Space between label and input */
-    font-size: 16px;
+    font-size: 24px;       /* Large label text */
+    margin-bottom: 15px;
     font-weight: bold;
 }
 
 input, select {
     width: 100%;
-    padding: 15px;         /* Bigger input size */
-    font-size: 16px;
-    border-radius: 6px;
+    padding: 20px;         /* Big input height */
+    font-size: 22px;       /* Large text inside input */
+    border-radius: 8px;
     border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;       /* Large button text */
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #002b5c;
 }
