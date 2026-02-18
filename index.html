@@ -1,32 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>University Student Portal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<form id="registrationForm">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Matric Number" required>
 
-    <div class="container">
-        <h1>University Registration Portal</h1>
+    <select required>
+        <option>Select Department</option>
+        <option>Computer Science</option>
+        <option>Business Administration</option>
+    </select>
 
-        <form id="registrationForm">
-            <h2>Student Registration</h2>
-
-            <input type="text" id="fullname" placeholder="Full Name" required>
-            <input type="email" id="email" placeholder="Email Address" required>
-            <input type="text" id="matric" placeholder="Matric Number" required>
-
-            <select id="department" required>
-                <option value="">Select Department</option>
-                <option>Computer Science</option>
-                <option>Business Administration</option>
-                <option>Engineering</option>
-            </select>
-
-            <button type="submit">Register</button>
-        </form>
-
-        <div id="paymentSection" style="display:none;">
-            <h2>Online Payment</h2>
-            <p>School Fees: ₦50,000</p>
-            <button
+    <button type="submit">Register</button>
+</form>
