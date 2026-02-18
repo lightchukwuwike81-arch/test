@@ -1,53 +1,99 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #002147, #004080);
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 600px;
-    margin: 100px auto;
+    max-width: 600px;
+    margin: 60px auto;
     background: white;
-    padding: 60px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
-h1 {
+.header {
     text-align: center;
-    font-size: 40px;       /* Very large title */
-    margin-bottom: 50px;   /* Large spacing */
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    color: #002147;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #555;
+    font-size: 18px;
 }
 
 .form-group {
-    margin-bottom: 50px;   /* VERY large space between fields */
+    margin-bottom: 35px;
 }
 
 label {
     display: block;
-    font-size: 24px;       /* Large label text */
-    margin-bottom: 15px;
+    font-size: 18px;
     font-weight: bold;
+    margin-bottom: 10px;
+    color: #002147;
 }
 
 input, select {
     width: 100%;
-    padding: 20px;         /* Big input height */
-    font-size: 22px;       /* Large text inside input */
+    padding: 18px;
+    font-size: 18px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+/* Animated Focus Effect */
+input:focus, select:focus {
+    border-color: #004080;
+    box-shadow: 0 0 10px rgba(0,64,128,0.3);
+    outline: none;
+    transform: scale(1.02);
 }
 
 button {
     width: 100%;
-    padding: 20px;
-    font-size: 24px;       /* Large button text */
-    background-color: #004080;
+    padding: 18px;
+    font-size: 20px;
+    background-color: #002147;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #002b5c;
+    background-color: #004080;
+    transform: translateY(-3px);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        margin: 30px 20px;
+        padding: 30px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    input, select {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 15px;
+    }
 }
