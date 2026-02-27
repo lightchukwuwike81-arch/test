@@ -1,99 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>University Student Registration Portal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UniPortal - Student Registration & Payment</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#2f49d1,#4b2bbd);
+    color:white;
+}
+
+/* HERO SECTION */
+.hero{
+    text-align:center;
+    padding:80px 20px 40px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.6;
+    opacity:0.9;
+}
+
+/* MAIN CONTAINER */
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    background:white;
+    color:#333;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* SECTION TITLE */
+.section-title{
+    font-size:24px;
+    margin-bottom:20px;
+    color:#2f49d1;
+}
+
+/* FORM GRID */
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+/* INPUT STYLE */
+input, select{
+    width:100%;
+    padding:12px 15px;
+    border-radius:8px;
+    border:2px solid #ddd;
+    transition:0.3s;
+    outline:none;
+}
+
+/* Animated Focus Effect */
+input:focus, select:focus{
+    border-color:#2f49d1;
+    box-shadow:0 0 0 3px rgba(47,73,209,0.2);
+    transform:scale(1.02);
+}
+
+/* FULL WIDTH */
+.full{
+    grid-column:1/3;
+}
+
+button{
+    background:#2f49d1;
+    color:white;
+    padding:14px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1f33a8;
+    transform:translateY(-2px);
+}
+
+/* PAYMENT CARD */
+.payment-box{
+    margin-top:30px;
+    background:#f3f5ff;
+    padding:20px;
+    border-radius:12px;
+}
+
+.fee-display{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:15px;
+    color:#2f49d1;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+    .full{
+        grid-column:1/2;
+    }
+}
+</style>
 </head>
+
 <body>
+
+<div class="hero">
+    <h1>UniPortal</h1>
+    <p>
+        A modern student registration and secure online payment system.
+        Register, enroll in courses, and complete tuition payments easily.
+    </p>
+</div>
 
 <div class="container">
 
-    <div class="header">
-        <h1>Bluecrest University</h1>
-        <p>Undergraduate Student Registration Form</p>
-    </div>
+    <div class="section-title">Student Registration</div>
 
-    <form id="registrationForm">
+    <form id="regForm">
 
-        <div class="form-group">
-            <label>Full Name</label>
-            <input type="text" required>
-        </div>
+        <div class="form-grid">
 
-        <div class="form-group">
-            <label>Date of Birth</label>
-            <input type="date" required>
-        </div>
+            <input type="text" placeholder="Full Name" required>
+            <input type="date" placeholder="Date of Birth" required>
 
-        <div class="form-group">
-            <label>Nationality</label>
-            <input type="text" required>
-        </div>
-
-        <div class="form-group">
-            <label>Gender</label>
             <select required>
                 <option value="">Select Gender</option>
                 <option>Male</option>
                 <option>Female</option>
-                <option>Other</option>
             </select>
-        </div>
 
-        <div class="form-group">
-            <label>Phone Number</label>
-            <input type="tel" required>
-        </div>
+            <input type="text" placeholder="Nationality" required>
 
-        <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" required>
-        </div>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
 
-        <div class="form-group">
-            <label>Contact Address</label>
-            <textarea rows="3" required></textarea>
-        </div>
+            <input type="text" placeholder="Matric Number" required>
+            <input type="text" placeholder="Year of Entry" required>
 
-        <div class="form-group">
-            <label>Matric Number</label>
-            <input type="text" required>
-        </div>
+            <input type="text" placeholder="Level (e.g. 100, 200)" required>
 
-        <div class="form-group">
-            <label>Course of Study</label>
-            <input type="text" required>
-        </div>
-
-        <div class="form-group">
-            <label>Year of Entry</label>
-            <select required>
-                <option value="">Select Year</option>
-                <option>2021</option>
-                <option>2022</option>
-                <option>2023</option>
-                <option>2024</option>
-                <option>2025</option>
+            <select id="course" required>
+                <option value="">Select Course of Study</option>
+                <option value="50000">Computer Science - ₦50,000</option>
+                <option value="45000">Business Administration - ₦45,000</option>
+                <option value="40000">Mass Communication - ₦40,000</option>
+                <option value="60000">Engineering - ₦60,000</option>
             </select>
+
+            <input type="text" placeholder="Contact Address" class="full" required>
+
         </div>
 
-        <div class="form-group">
-            <label>Level</label>
-            <select required>
-                <option value="">Select Level</option>
-                <option>100 Level</option>
-                <option>200 Level</option>
-                <option>300 Level</option>
-                <option>400 Level</option>
-            </select>
-        </div>
+        <div class="payment-box">
+            <div class="section-title">Online Payment</div>
 
-        <button type="submit">Submit Registration</button>
+            <div class="fee-display">
+                Total Tuition Fee: ₦<span id="fee">0</span>
+            </div>
+
+            <input type="text" placeholder="Card Number" class="full" required>
+            <input type="text" placeholder="Card Holder Name" required>
+            <input type="month" required>
+
+            <button type="submit" class="full">Complete Registration & Pay</button>
+        </div>
 
     </form>
 
 </div>
+
+<script>
+// Fee auto calculation
+const courseSelect = document.getElementById("course");
+const feeDisplay = document.getElementById("fee");
+
+courseSelect.addEventListener("change", function(){
+    feeDisplay.textContent = this.value || 0;
+});
+
+// Fake payment confirmation
+document.getElementById("regForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Registration Successful! Payment Confirmed.");
+});
+</script>
 
 </body>
 </html>
