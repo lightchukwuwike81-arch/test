@@ -7,56 +7,74 @@
 </head>
 <body>
 
-<header>
-    <h1>BRIGHT FUTURE UNIVERSITY</h1>
-</header>
-
+<!-- HERO SECTION -->
 <section class="hero">
-    <p>
-        Bright Future University was established with one clear mission —
-        to shape tomorrow’s leaders today. We believe every student deserves
-        the opportunity to grow academically, morally, and professionally.
+    <h1 class="main-title">Bright Future University</h1>
+
+    <p class="subtitle">
+        A modern and innovative university committed to building students
+        from different regions, cultures, and backgrounds into globally
+        competitive leaders.
     </p>
 
-    <p>
-        We named our institution <strong>"Bright Future"</strong> because we are
-        committed to building students from different regions, cultures,
-        and backgrounds into confident, skilled, and globally competitive
-        graduates.
+    <p class="subtitle">
+        We are called <strong>Bright Future</strong> because we believe every
+        student deserves the opportunity to shine, grow, and achieve
+        academic and professional excellence.
     </p>
-
-    <button onclick="goToRegister()">Enroll Now</button>
 </section>
 
-<!-- Dropdown Buttons Section -->
-<section class="info-buttons">
+<!-- FEATURES -->
+<section class="features">
 
-    <button class="info-btn" onclick="toggleSection('aboutContent')">
-        About Us
-    </button>
-
-    <div id="aboutContent" class="hidden-content">
-        <p>
-            Bright Future University is dedicated to academic excellence,
-            leadership development, and research innovation. We empower
-            students with practical knowledge and global skills.
-        </p>
+    <div class="card">
+        <h2>Modern Learning</h2>
+        <p>Smart classrooms, digital labs, and advanced technology
+        for 21st century education.</p>
     </div>
 
-    <button class="info-btn" onclick="toggleSection('contactContent')">
-        Contact Us
-    </button>
-
-    <div id="contactContent" class="hidden-content">
-        <p>Email: info@brightfutureuniversity.edu</p>
-        <p>Phone: +234 800 123 4567</p>
-        <p>Address: 15 Knowledge Avenue, Lagos, Nigeria</p>
+    <div class="card">
+        <h2>Global Community</h2>
+        <p>Students from different states and countries learning
+        together in unity and excellence.</p>
     </div>
 
+    <div class="card">
+        <h2>Career Development</h2>
+        <p>Internships, leadership programs and real-world preparation
+        for your bright future.</p>
+    </div>
+
+</section>
+
+<!-- ENROLL SECTION -->
+<section class="enroll-section">
+    <button class="enroll-btn" onclick="goToRegister()">
+        ENROLL NOW
+    </button>
+</section>
+
+<!-- ABOUT US (Now Near Bottom) -->
+<section class="bottom-section">
+    <h2>About Us</h2>
+    <p>
+        Bright Future University is dedicated to academic excellence,
+        research innovation, leadership development, and global impact.
+        We empower students with practical knowledge, creativity,
+        and strong ethical values.
+    </p>
+</section>
+
+<!-- CONTACT US (LAST SECTION) -->
+<section class="bottom-section">
+    <h2>Contact Us</h2>
+    <p>Email: info@brightfutureuniversity.edu</p>
+    <p>Phone: +234 800 123 4567</p>
+    <p>Address: Lagos, Nigeria</p>
 </section>
 
 <footer>
-    <p>© 2026 Bright Future University | All Rights Reserved</p>
+    <p>© 2026 Bright Future University</p>
 </footer>
 
 <script src="script.js"></script>
