@@ -1,191 +1,78 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bright Future University</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:linear-gradient(135deg,#0f4c81,#3a7bd5);
-color:white;
-text-align:center;
-}
-
-/* HEADER */
-
-header{
-padding:40px 20px;
-}
-
-header h1{
-font-size:55px;
-margin-bottom:10px;
-}
-
-header p{
-font-size:20px;
-max-width:800px;
-margin:auto;
-line-height:1.6;
-}
-
-  
->Enroll Now</button>
-
-.enroll-btn{
-margin-top:35px;
-}
-
-.enroll-btn a{
-background:#1e90ff;
-color:white;
-padding:15px 35px;
-font-size:20px;
-border-radius:40px;
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
-}
-
-.enroll-btn a:hover{
-background:#0066cc;
-}
-
-/* ABOUT SECTION */
-
-.about{
-padding:60px 20px;
-max-width:900px;
-margin:auto;
-}
-
-.about h2{
-font-size:35px;
-margin-bottom:20px;
-}
-
-.about p{
-font-size:18px;
-line-height:1.7;
-}
-
-/* FEATURES */
-
-.features{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:30px;
-padding:50px 20px;
-}
-
-.card{
-background:rgba(255,255,255,0.1);
-padding:30px;
-border-radius:12px;
-width:280px;
-backdrop-filter:blur(10px);
-}
-
-.card h3{
-margin-bottom:15px;
-font-size:24px;
-}
-
-/* FOOTER */
-
-footer{
-margin-top:40px;
-padding:20px;
-background:rgba(0,0,0,0.2);
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <title>Bright Future University</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<section class="hero">
 
-<header>
+    <h1 class="main-title">Bright Future University</h1>
 
-<h1>Bright Future University</h1>
+    <p class="subtitle">
+        A prestigious institution committed to academic excellence,
+        innovation, leadership, and global development.
+    </p>
 
-<p>
-Bright Future University is a leading institution dedicated to academic excellence,
-innovation, and the development of future global leaders. Our university provides
-students with world-class education, modern research facilities, and an inspiring
-learning environment that prepares them for successful careers.
-</p>
+    <p class="subtitle">
+        Empowering students from diverse backgrounds to build
+        a successful and meaningful future.
+    </p>
 
-<div class="enroll-btn">
-<a href="#">Enroll Now</a>
-</div>
-
-</header>
-
-
-<section class="about">
-
-<h2>About Our University</h2>
-
-<p>
-At Bright Future University, we believe education is the key to building a better
-future. Our institution offers a wide range of undergraduate and postgraduate
-programs in science, technology, business, and the arts. With experienced
-lecturers, modern laboratories, and advanced learning technologies, students
-gain both theoretical knowledge and practical skills.
-</p>
-
-<p>
-We are committed to developing confident graduates who can compete globally.
-Our vibrant campus community encourages creativity, leadership, teamwork,
-and innovation.
-</p>
+    <div class="hero-buttons">
+        <button class="primary-btn" onclick="goToRegister()">Enroll Now</button>
+        <button class="secondary-btn">Student Portal</button>
+    </div>
 
 </section>
 
 
 <section class="features">
 
-<div class="card">
-<h3>Quality Education</h3>
-<p>
-Our academic programs are designed to meet international standards
-and equip students with knowledge that prepares them for the future.
-</p>
-</div>
+    <div class="card">
+        <h2>Academic Excellence</h2>
+        <p>World-class lecturers, modern laboratories,
+        and innovative research programs.</p>
+    </div>
 
-<div class="card">
-<h3>Modern Facilities</h3>
-<p>
-Students enjoy access to modern laboratories, digital libraries,
-and comfortable learning environments.
-</p>
-</div>
+    <div class="card">
+        <h2>Global Community</h2>
+        <p>A multicultural environment that prepares students
+        for international opportunities.</p>
+    </div>
 
-<div class="card">
-<h3>Career Opportunities</h3>
-<p>
-Bright Future University connects students with internships,
-industry training, and career development programs.
-</p>
-</div>
+    <div class="card">
+        <h2>Career Development</h2>
+        <p>Internships, mentorship, and industry partnerships
+        that shape your professional future.</p>
+    </div>
 
 </section>
 
 
+<section class="bottom-section">
+    <h2>About Us</h2>
+    <p>
+        Bright Future University was founded to provide high-quality
+        education and leadership training. Our mission is to nurture
+        responsible graduates equipped with knowledge, integrity,
+        and global vision.
+    </p>
+</section>
+
+<section class="bottom-section">
+    <h2>Contact Us</h2>
+    <p>Email: info@brightfutureuniversity.edu</p>
+    <p>Phone: +234 800 123 4567</p>
+    <p>Location: Lagos, Nigeria</p>
+</section>
+
 <footer>
-
-<p>© 2026 Bright Future University | All Rights Reserved</p>
-
+    © 2026 Bright Future University. All Rights Reserved.
 </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
-```
