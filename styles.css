@@ -1,7 +1,73 @@
-body{
+/* Reset */
+*{
 margin:0;
-font-family: Arial, sans-serif;
-background: linear-gradient(135deg,#4f6df5,#3b2dbf);
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body Background */
+body{
+background: linear-gradient(135deg, #4f6df5, #3b2dbf);
 color:white;
 text-align:center;
+}
+
+/* Header */
+header{
+padding:40px;
+font-size:40px;
+font-weight:bold;
+}
+
+/* Main Section */
+.main{
+padding:60px 20px;
+max-width:900px;
+margin:auto;
+}
+
+.main p{
+font-size:18px;
+line-height:1.7;
+margin-top:20px;
+}
+
+/* Enroll Button */
+.enroll-btn{
+margin-top:40px;
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:white;
+color:#3b2dbf;
+cursor:pointer;
+transition:0.3s;
+}
+
+.enroll-btn:hover{
+background:#dcdcff;
+transform:scale(1.05);
+}
+
+/* Bottom Buttons */
+.bottom-buttons{
+margin-top:120px;
+}
+
+.bottom-buttons button{
+margin:10px;
+padding:12px 30px;
+border:none;
+border-radius:25px;
+background:white;
+color:#3b2dbf;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.bottom-buttons button:hover{
+background:#dcdcff;
 }
