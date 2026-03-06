@@ -1,11 +1,92 @@
-.about, .contact {
-    padding: 50px;
-    text-align: center;
-    background: white;
-    margin: 20px;
-    border-radius: 8px;
+body{
+margin:0;
+font-family:Segoe UI, Arial;
+color:white;
+background:linear-gradient(135deg,#2d3ee6,#6a11cb);
 }
 
-.about h2, .contact h2 {
-    color: #003366;
+/* HERO SECTION */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.tagline{
+max-width:700px;
+margin:auto;
+font-size:18px;
+line-height:1.6;
+opacity:0.9;
+}
+
+/* ENROLL BUTTON */
+
+.enroll-btn{
+margin-top:30px;
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:white;
+color:#2d3ee6;
+cursor:pointer;
+font-weight:bold;
+}
+
+.enroll-btn:hover{
+background:#e6e6ff;
+}
+
+/* FEATURES */
+
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:60px 20px;
+flex-wrap:wrap;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:30px;
+width:280px;
+border-radius:15px;
+text-align:center;
+backdrop-filter:blur(10px);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* ABOUT */
+
+.about{
+text-align:center;
+padding:80px 20px;
+max-width:800px;
+margin:auto;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+padding:60px 20px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+opacity:0.8;
 }
