@@ -1,65 +1,15 @@
-```html
 <!DOCTYPE html>
 <html>
 <head>
-<title>Student Registration - Bright Future University</title>
-
-<style>
-
-body{
-font-family:Arial;
-background:#f4f6fa;
-margin:0;
-}
-
-.container{
-width:450px;
-margin:50px auto;
-background:white;
-padding:30px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-h2{
-text-align:center;
-color:#0f4c81;
-}
-
-input,select{
-width:100%;
-padding:10px;
-margin:8px 0;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-button{
-width:100%;
-padding:12px;
-background:#1e90ff;
-color:white;
-border:none;
-font-size:18px;
-border-radius:5px;
-cursor:pointer;
-}
-
-button:hover{
-background:#0066cc;
-}
-
-</style>
-
+<title>Student Registration</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<h1 style="text-align:center;">Student Registration</h1>
 
-<h2>University Student Registration</h2>
-
-<form>
+<form style="max-width:500px;margin:auto;">
 
 <label>Full Name</label>
 <input type="text" required>
@@ -68,46 +18,29 @@ background:#0066cc;
 <input type="date" required>
 
 <label>Gender</label>
-<select required>
+<select>
 <option>Male</option>
 <option>Female</option>
 </select>
 
-<label>Nationality</label>
-<input type="text" required>
-
-<label>Phone Number</label>
-<input type="tel" required>
-
 <label>Email</label>
 <input type="email" required>
 
-<label>Contact Address</label>
+<label>Phone Number</label>
 <input type="text" required>
 
-<label>Matric Number</label>
+<label>Nationality</label>
 <input type="text">
 
 <label>Course of Study</label>
-<input type="text" required>
+<input type="text">
 
 <label>Year of Entry</label>
-<input type="number" required>
-
-<label>Level</label>
-<select>
-<option>100</option>
-<option>200</option>
-<option>300</option>
-<option>400</option>
-</select>
+<input type="number">
 
 <button type="submit">Submit Registration</button>
 
 </form>
 
-</div>
-
 </body>
 </html>
-```
