@@ -1,44 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>University Payment Portal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>School Fees Payment - Bright Future University</title>
+
+<link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
 
-<div class="container">
+<header>
+Bright Future University
+</header>
 
-    <div class="header">
-        <h1>Bluecrest University</h1>
-        <p>Online School Fees Payment</p>
-    </div>
+<section class="payment-container">
 
-    <div class="payment-box">
-        <h2 id="studentName"></h2>
-        <h3>Amount to Pay: ₦50,000</h3>
+<!-- PAYMENT INFORMATION -->
 
-        <button onclick="completePayment()">Pay Now</button>
-    </div>
+<div class="payment-info">
+
+<h2>School Fees Payment Portal</h2>
+
+<p>
+Welcome to the Bright Future University Online Payment Portal.
+Students can securely pay their tuition and registration fees
+through this platform.
+</p>
+
+<p>
+Please confirm your information and complete your payment to
+finalize your admission and registration process.
+</p>
 
 </div>
 
-<script>
 
-    // Display student name from localStorage
-    document.getElementById("studentName").innerText =
-        "Student: " + localStorage.getItem("studentName");
+<!-- PAYMENT FORM -->
 
-    function completePayment() {
-        alert("Payment Successful 🎉");
+<div class="payment-form">
 
-        // Clear storage after payment
-        localStorage.clear();
+<h2>Payment Details</h2>
 
-        window.location.href = "index.html";
-    }
+<form>
 
-</script>
+<div class="payment-grid">
+
+<div class="payment-group">
+<label>Student Name</label>
+<input type="text" placeholder="Enter Student Name" required>
+</div>
+
+<div class="payment-group">
+<label>Matric Number</label>
+<input type="text" placeholder="Enter Matric Number" required>
+</div>
+
+<div class="payment-group">
+<label>Course of Study</label>
+<input type="text" placeholder="Enter Course" required>
+</div>
+
+<div class="payment-group">
+<label>Payment Amount</label>
+<input type="text" value="₦150,000" readonly>
+</div>
+
+<div class="payment-group">
+<label>Card Number</label>
+<input type="text" placeholder="1234 5678 9012 3456" required>
+</div>
+
+<div class="payment-group">
+<label>Card Holder Name</label>
+<input type="text" placeholder="Name on Card" required>
+</div>
+
+<div class="payment-group">
+<label>Expiry Date</label>
+<input type="month" required>
+</div>
+
+<div class="payment-group">
+<label>CVV</label>
+<input type="password" placeholder="123" required>
+</div>
+
+</div>
+
+<button class="pay-btn">Complete Payment</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Bright Future University | Secure Payment Portal
+</footer>
 
 </body>
+
 </html>
